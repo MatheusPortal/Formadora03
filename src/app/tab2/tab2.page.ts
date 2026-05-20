@@ -5,7 +5,7 @@ import { IonContent,
   IonCardContent,
   IonCardHeader,
   IonCardSubtitle,
-  IonCardTitle, IonProgressBar, } from '@ionic/angular/standalone';
+  IonCardTitle, IonProgressBar, IonToolbar } from '@ionic/angular/standalone';
 
 import { ServiceFakestore } from '../services/service.fakestore';
 
@@ -14,7 +14,7 @@ import { ServiceFakestore } from '../services/service.fakestore';
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
-  imports: [ IonContent, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonProgressBar ]
+  imports: [ IonContent, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonProgressBar, IonToolbar ]
 })
 
 
