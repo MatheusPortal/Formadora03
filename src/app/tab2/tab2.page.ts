@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent } from '@ionic/angular/standalone';
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
+import { IonContent, 
+  IonButton,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle, } from '@ionic/angular/standalone';
+
 import { ServiceFakestore } from '../services/service.fakestore';
 
 
@@ -8,7 +14,7 @@ import { ServiceFakestore } from '../services/service.fakestore';
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
-  imports: [ IonContent ]
+  imports: [ IonContent,   IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, ]
 })
 
 
@@ -24,4 +30,5 @@ export class Tab2Page implements OnInit {
     );
   }
 
+  
 }
