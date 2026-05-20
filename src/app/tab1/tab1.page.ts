@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent, IonCardHeader, IonCard, IonCardSubtitle, IonCardTitle, IonToolbar  } from '@ionic/angular/standalone';
+import { IonContent, IonCardHeader, IonCard, IonCardSubtitle, IonCardTitle,  } from '@ionic/angular/standalone';
 import { ServiceAlunos } from '../services/service.alunos';
 import { ModelsAlunos } from '../models/models.alunos';
 
@@ -7,7 +7,7 @@ import { ModelsAlunos } from '../models/models.alunos';
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss'],
-  imports: [IonContent, IonContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonToolbar ],
+  imports: [IonContent, IonContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle ],
 })
 
 

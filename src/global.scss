@@ -36,3 +36,16 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+html,
+body,
+ion-app,
+ion-content {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+ion-tab-bar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
