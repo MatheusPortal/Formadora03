@@ -1,0 +1,59 @@
+.errorLoad {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 4px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #6d6d6d;
+}
+
+.errorLoad h1 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.errorLoad i {
+    font-size: 45px;
+}
+
+ion-progress-bar {
+    --background: #5e8c6ac4;
+    --progress-background: #f2c45a;
+}
+
+ion-title {
+    text-align: center;
+}
+
+
+.buttonsGui {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ion-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ion-card-header {
+    width: 100%;
+}
+
+ion-card img {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    object-fit: contain;
+}

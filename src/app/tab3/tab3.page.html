@@ -1,3 +1,42 @@
+<ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button (click)="modoExibir(true)"> Exibir </ion-button>
+    </ion-buttons>
+    <ion-title>Produtos</ion-title>
+    <ion-buttons slot="end">
+        <ion-button (click)="modoExibir(false)"> Ocultar </ion-button>
+    </ion-buttons>
+</ion-toolbar>
 <ion-content [fullscreen]="true">
-  
+    @if (storeKeys.length > 0) {
+        @if (exibirCards) {
+            @for (item of fakeStore; track item.id) {
+                <ion-card>
+                    <img alt="Silhouette of mountains" [src]="item.image" />
+                    <ion-card-header>
+                        <ion-card-title>{{ item.title }}</ion-card-title>
+                        <ion-card-subtitle>Preço ${{ item.price }}</ion-card-subtitle>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                        {{ item.description }}
+                    </ion-card-content>
+                    <div class="buttonsGui">
+
+                    </div>
+                </ion-card>
+            }
+        } @else {
+            <div class="errorLoad">
+                <i class="bi bi-eye-slash"></i>
+                <h1>shiiiuuu!</h1>
+            </div>
+        }
+    } @else {
+        <ion-progress-bar type="indeterminate"></ion-progress-bar>
+        <div class="errorLoad">
+            <i class="bi bi-cloud-drizzle"></i>
+            <h1>Não foi possível carregar a pagina!</h1>
+        </div>
+    }
 </ion-content>
