@@ -1,1 +1,13 @@
 
+ion-tab-button i {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+ion-tab-bar {
+    --color-selected: #f2c45a;
+    --border: 0px;
+    --background: #5e8c6a;
+    --color: rgb(255, 255, 255);
+    padding: 5px 0px;
+}

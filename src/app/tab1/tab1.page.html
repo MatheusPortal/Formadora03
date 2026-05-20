@@ -1,17 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <img alt="Silhouette of mountains" src="https://i.imgur.com/8iVA8Nt.jpeg" />
+      <div class="info">
+        <ion-card-title>{{alunos[0].nome}}</ion-card-title>
+        @if (alunos.length > 0) {
+          @if (alunos[0].chave === '') {
+            <ion-card-subtitle>{{ alunos[0].id }} - {{ alunos[0].unidade }} - {{ alunos[0].turno }}</ion-card-subtitle>
+          } @else {
+            <ion-card-subtitle>{{ alunos[0].id }} - {{ alunos[0].unidade }} - {{ alunos[0].turno }} - {{ alunos[0].chave }}</ion-card-subtitle>
+          }
+        }
+      </div>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
